@@ -1,0 +1,62 @@
+:root {
+
+    /* ### Theme 1 */
+
+    --Very-dark-desaturated-blue: #3a4764;
+    --Very-dark-desaturated-blue: #232c43;
+    --Very-dark-desaturated-blue: #182034;
+
+    --Desaturated-dark-blue: #637097;
+    --Desaturated-dark-blue: #404e72;
+
+    --Red: #d03f2f;
+    --Dark-red: #93261a;
+
+    --Light-grayish-orange: #eae3dc;
+    --Grayish-orange: #b4a597;
+
+    --Very-dark-grayish-blue: #444b5a;
+    --White: #ffffff;
+    
+    /* ### Theme 2 */
+    
+    
+    --Light-gray: hsl(0, 0%, 90%);
+    --Grayish-red: hsl(0, 5%, 81%);
+    --Very-light-gray: hsl(0, 0%, 93%);
+    
+    
+    --Dark-moderate-cyan: hsl(185, 42%, 37%);
+    --Very-dark-cyan: hsl(185, 58%, 25%);
+    
+    --Orange: hsl(25, 98%, 40%);
+    --Dark-orange: hsl(25, 99%, 27%);
+    
+    --Light-grayish-yellow: hsl(45, 7%, 89%);
+    --Dark-grayish-orange: hsl(35, 11%, 61%);
+    
+    
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --White: hsl(0, 0%, 100%);
+    
+    /* ### Theme 3 */
+    
+    
+    --Very-dark-violet: hsl(268, 75%, 9%);
+    --Very-dark-violet: hsl(268, 71%, 12%);
+    
+    
+    --Dark-violet: hsl(281, 89%, 26%);
+    --Vivid-magenta: hsl(285, 91%, 52%);
+    
+    --Pure-cyan: hsl(176, 100%, 44%);
+    --Soft-cyan: hsl(177, 92%, 70%);
+    
+    --Very-dark-violet: hsl(268, 47%, 21%);
+    --Dark-magenta: hsl(290, 70%, 36%);
+    
+    
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0%, 100%);
+}
