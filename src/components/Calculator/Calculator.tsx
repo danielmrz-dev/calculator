@@ -1,28 +1,39 @@
+import { useState } from "react";
 import * as S from "./StyledCalculator";
 
 export const Calculator: React.FC = () => {
 
+    const [themeColor, setThemeColor] = useState(1)
+
     return (
-        <S.CalculatorWrapper>
+        <S.CalculatorWrapper themeColor={themeColor} >
             <S.Header>
-                <S.Logo>calc</S.Logo>
+                <S.Logo themeColor={themeColor}>calc</S.Logo>
                 <S.ThemeWrapper>
-                    <S.ThemeText>
+                    <S.ThemeText themeColor={themeColor}>
                         THEME
                     </S.ThemeText>
-                    <S.InputsWrapper>
-                        <S.InputLabel htmlFor="one">1</S.InputLabel>
-                        <S.ThemeOption type="radio" name="theme" id="one"/>
+                    <S.Switch themeColor={themeColor}>
+                        <S.SwitchInput id="switch-y" name="tripple" value="Y"
+                            onChange={() => setThemeColor((themeColor * 0) + 1)}
+                        />
+                        <S.SwitchLabel themeColor={themeColor} htmlFor="switch-y" className="switch-label-y">1</S.SwitchLabel>
 
-                        <S.InputLabel htmlFor="two">2</S.InputLabel>
-                        <S.ThemeOption type="radio" name="theme" id="two"/>
+                        <S.SwitchInput id="switch-i" name="tripple" value="I" defaultChecked 
+                            onChange={() => setThemeColor((themeColor * 0) + 2)}
+                        />
+                        <S.SwitchLabel themeColor={themeColor} htmlFor="switch-i" className="switch-label-i">2</S.SwitchLabel>
 
-                        <S.InputLabel htmlFor="three">3</S.InputLabel>
-                        <S.ThemeOption type="radio" name="theme" id="three"/>                        
-                    </S.InputsWrapper>
+                        <S.SwitchInput id="switch-n" name="tripple" value="N" 
+                            onChange={() => setThemeColor((themeColor * 0) + 3)}
+                        />
+                        <S.SwitchLabel themeColor={themeColor} htmlFor="switch-n" className="switch-label-n">3</S.SwitchLabel>
+
+                        <S.SwitchSelector />
+                    </S.Switch>
                 </S.ThemeWrapper>
             </S.Header>
-            <S.NumberInput type="number" />
+            <S.NumberInput type="number" value={399.981} />
 
             <S.ButtonsWrapper>
                 <S.Button>7</S.Button>

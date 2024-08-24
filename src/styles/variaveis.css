@@ -21,9 +21,9 @@
     /* ### Theme 2 */
     
     
-    --Light-gray: hsl(0, 0%, 90%);
-    --Grayish-red: hsl(0, 5%, 81%);
-    --Very-light-gray: hsl(0, 0%, 93%);
+    --Light-gray: #e6e6e6;
+    --Grayish-red: #d1cccc;
+    --Very-light-gray: #ededed;
     
     
     --Dark-moderate-cyan: hsl(185, 42%, 37%);
@@ -36,7 +36,7 @@
     --Dark-grayish-orange: hsl(35, 11%, 61%);
     
     
-    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --Very-dark-grayish-yellow: #35352c;
     --White: hsl(0, 0%, 100%);
     
     /* ### Theme 3 */
