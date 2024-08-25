@@ -27,11 +27,11 @@
     --Very-light-gray: #ededed;
     
     
-    --Dark-moderate-cyan: hsl(185, 42%, 37%);
-    --Very-dark-cyan: hsl(185, 58%, 25%);
+    --Dark-moderate-cyan: #377f86;
+    --Very-dark-cyan: #1b5f65;
     
-    --Orange: hsl(25, 98%, 40%);
-    --Dark-orange: hsl(25, 99%, 27%);
+    --Orange: #ca5502;
+    --Dark-orange: #893901;
     
     --Light-grayish-yellow: #e5e4e1;
     --Dark-grayish-orange: #a69d91;
@@ -43,21 +43,21 @@
     /* ### Theme 3 */
     
     
-    --Very-dark-violet: hsl(268, 75%, 9%);
-    --Very-dark-violet: hsl(268, 71%, 12%);
+    --Very-dark-violet: #160628;
+    --Very-dark-violet: #2a1146;
     
     
-    --Dark-violet: hsl(281, 89%, 26%);
-    --Vivid-magenta: hsl(285, 91%, 52%);
+    --Dark-violet: #58077d;
+    --Vivid-magenta: #bc15f4;
     
-    --Pure-cyan: hsl(176, 100%, 44%);
-    --Soft-cyan: hsl(177, 92%, 70%);
+    --Pure-cyan: #00e0d1;
+    --Soft-cyan: #6cf9f2;
     
-    --Very-dark-violet: hsl(268, 47%, 21%);
-    --Dark-magenta: hsl(290, 70%, 36%);
+    --Very-dark-violet: #341c4f;
+    --Dark-magenta: #871c9c;
     
     
-    --Light-yellow: hsl(52, 100%, 62%);
-    --Very-dark-blue: hsl(198, 20%, 13%);
-    --White: hsl(0, 0%, 100%);
+    --Light-yellow: #ffe53d;
+    --Very-dark-blue: #1b2428;
+    --White: #ffffff;
 }

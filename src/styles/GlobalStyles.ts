@@ -13,5 +13,14 @@ export const GlobalStyles = createGlobalStyle`
         background-color: #3a4764;
     }
 
+    @media screen and (min-width: 768px) {
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
 
 `
