@@ -33,27 +33,27 @@ export const Calculator: React.FC = () => {
                     </S.Switch>
                 </S.ThemeWrapper>
             </S.Header>
-            <S.NumberInput type="number" value={399.981} />
+            <S.NumberInput themeColor={themeColor} type="number" value={399.981} />
 
-            <S.ButtonsWrapper>
-                <S.Button>7</S.Button>
-                <S.Button>8</S.Button>
-                <S.Button>9</S.Button>
-                <S.Button delOrReset={true}>DEL</S.Button>
-                <S.Button>4</S.Button>
-                <S.Button>5</S.Button>
-                <S.Button>6</S.Button>
-                <S.Button>+</S.Button>
-                <S.Button>1</S.Button>
-                <S.Button>2</S.Button>
-                <S.Button>3</S.Button>
-                <S.Button>-</S.Button>
-                <S.Button>.</S.Button>
-                <S.Button>0</S.Button>
-                <S.Button>/</S.Button>
-                <S.Button>x</S.Button>
-                <S.Button delOrReset={true} twoColumn={true}>RESET</S.Button>
-                <S.Button calculate={true} twoColumn={true}>=</S.Button>
+            <S.ButtonsWrapper themeColor={themeColor}>
+                <S.Button themeColor={themeColor}>7</S.Button>
+                <S.Button themeColor={themeColor}>8</S.Button>
+                <S.Button themeColor={themeColor}>9</S.Button>
+                <S.Button themeColor={themeColor} delOrReset={true}>DEL</S.Button>
+                <S.Button themeColor={themeColor}>4</S.Button>
+                <S.Button themeColor={themeColor}>5</S.Button>
+                <S.Button themeColor={themeColor}>6</S.Button>
+                <S.Button themeColor={themeColor}>+</S.Button>
+                <S.Button themeColor={themeColor}>1</S.Button>
+                <S.Button themeColor={themeColor}>2</S.Button>
+                <S.Button themeColor={themeColor}>3</S.Button>
+                <S.Button themeColor={themeColor}>-</S.Button>
+                <S.Button themeColor={themeColor}>.</S.Button>
+                <S.Button themeColor={themeColor}>0</S.Button>
+                <S.Button themeColor={themeColor}>/</S.Button>
+                <S.Button themeColor={themeColor}>x</S.Button>
+                <S.Button themeColor={themeColor} delOrReset={true} twoColumn={true}>RESET</S.Button>
+                <S.Button themeColor={themeColor} calculate={true} twoColumn={true}>=</S.Button>
             </S.ButtonsWrapper>
         </S.CalculatorWrapper>
     )

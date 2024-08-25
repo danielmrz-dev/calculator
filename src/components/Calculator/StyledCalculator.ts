@@ -90,8 +90,6 @@ export const SwitchInput = styled.input.attrs({ type: "radio" })`
     } */
 `;
 
-//= CONTINUAR AQUI !!
-
 export const SwitchSelector = styled.span`
     position: absolute;
     z-index: 1;
@@ -120,22 +118,23 @@ export const SwitchSelector = styled.span`
     }
 `;
 
-export const NumberInput = styled.input`
+export const NumberInput = styled.input<ThemeColor>`
     width: 100%;
     padding: 1.5rem 1rem;
     text-align: end;
-    background-color: #182034;
-    color: #ffffff;
+    background-color: ${(props) => setThemeColor(props.themeColor, "#182034", "#ffffff8b", "blue")};
+    color: ${(props) => setThemeColor(props.themeColor, "#ffffff", "#182034", "blue")};
     font-size: 2.5rem;
     font-weight: 700;
     border: none;
     border-radius: 10px;
+    transition: background-color .2s ease, color .2s ease;
 `;
 
-export const ButtonsWrapper = styled.div`
+export const ButtonsWrapper = styled.div<ThemeColor>`
     width: 100%;
     padding: 1.5rem;
-    background-color: #182034;
+    background-color: ${(props) => setThemeColor(props.themeColor, "#182034", "#d1cccc", "blue")};
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.15rem .75rem;
@@ -146,12 +145,16 @@ interface ButtonProps {
     delOrReset?: boolean;
     calculate?: boolean;
     twoColumn?: boolean;
+    themeColor: number
 }
 
 export const Button = styled.button<ButtonProps>`
     background-color:  ${(props) => {
             if (props.delOrReset) {
-                return "#637097";
+                return (props) => setThemeColor(props.themeColor, "#182034", "#d1cccc", "blue");
+
+                //= CONTINUAR AQUI
+
             } else if (props.calculate) {
                 return "#d03f2f"
             }

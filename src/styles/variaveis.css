@@ -16,13 +16,14 @@
     --Grayish-orange: #b4a597;
 
     --Very-dark-grayish-blue: #444b5a;
-    --White: #ffffff;
+    --White: #ffffff8b;
     
     /* ### Theme 2 */
     
     
     --Light-gray: #e6e6e6;
     --Grayish-red: #d1cccc;
+    --Grayish-red: #d1ccccc6;
     --Very-light-gray: #ededed;
     
     
@@ -32,12 +33,12 @@
     --Orange: hsl(25, 98%, 40%);
     --Dark-orange: hsl(25, 99%, 27%);
     
-    --Light-grayish-yellow: hsl(45, 7%, 89%);
-    --Dark-grayish-orange: hsl(35, 11%, 61%);
+    --Light-grayish-yellow: #e5e4e1;
+    --Dark-grayish-orange: #a69d91;
     
     
     --Very-dark-grayish-yellow: #35352c;
-    --White: hsl(0, 0%, 100%);
+    --White: #ffffff;
     
     /* ### Theme 3 */
     
