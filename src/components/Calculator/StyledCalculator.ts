@@ -33,9 +33,8 @@ export const CalculatorWrapper = styled.main<ThemeColor>`
     gap: 2rem;
     transition: background-color .2s ease;
     @media screen and (min-width: 768px) {
-        max-width: 750px;
-
-        //= CONTINUAR AQUI, AJUSTAR A RESPONSIVIDADE
+        max-width: 590px;
+        gap: 1.5rem;
     }
 `;
 
@@ -44,6 +43,9 @@ export const Header = styled.header`
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    @media screen and (min-width: 768px) {
+        padding-inline: .5rem;
+    }
 `;
 
 export const Logo = styled.span<ThemeColor>`
@@ -96,12 +98,6 @@ export const SwitchLabel = styled.label<ThemeColor>`
 
 export const SwitchInput = styled.input.attrs({ type: "radio" })`
     display: none;
-
-    /* &:checked + ${SwitchLabel} {
-        color: #fff065;
-        transition: 0.15s ease-out;
-        transition-property: color, text-shadow;
-    } */
 `;
 
 export const SwitchSelector = styled.span`
@@ -114,7 +110,12 @@ export const SwitchSelector = styled.span`
     height: 17px;
     border-radius: 32px;
     background-color: #d03f2f;
-    transition: all .2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: all .2s cubic-bezier(0.18, 0.89, 0.32, 1.28), filter .3s ease;
+    cursor: pointer;
+    
+    &:hover {
+        filter: brightness(1.75);
+    }
 
     ${SwitchInput}:checked + ${SwitchLabel}.switch-label-y ~ & {
         transform: translateX(-90%);
@@ -123,7 +124,6 @@ export const SwitchSelector = styled.span`
 
     ${SwitchInput}:checked + ${SwitchLabel}.switch-label-i ~ & {
         transform: translateX(45%);
-        /* background-color: #f8ac59; */
     }
 
     ${SwitchInput}:checked + ${SwitchLabel}.switch-label-n ~ & {
@@ -143,6 +143,17 @@ export const NumberInput = styled.input<ThemeColor>`
     border: none;
     border-radius: 10px;
     transition: background-color .2s ease, color .2s ease;
+    appearance: none;
+    -moz-appearance: textfield;
+    @media screen and (min-width: 768px) {
+        font-size: 3.5rem;
+        padding: 2.25rem 2rem;
+        margin-top: .75rem;
+    }
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+        appearance: none;
+        -webkit-appearance: none;
+    }
 `;
 
 export const ButtonsWrapper = styled.div<ThemeColor>`
@@ -153,6 +164,10 @@ export const ButtonsWrapper = styled.div<ThemeColor>`
     grid-template-columns: repeat(4, 1fr);
     gap: 1.15rem .75rem;
     border-radius: 10px;
+    @media screen and (min-width: 768px){
+        gap: 1.75rem 1.5rem;
+        padding: 2rem;
+    }
 `;
 
 interface ButtonProps {
@@ -163,7 +178,8 @@ interface ButtonProps {
 }
 
 export const Button = styled.button<ButtonProps>`
-    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+    cursor: pointer;
+    transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, filter .3s ease;
     background-color:  ${(props) => {
             if (props.delOrReset) {
                 return (props) => setThemeColor(props.themeColor, "#637097", "#377f86", "#58077d");
@@ -186,7 +202,6 @@ export const Button = styled.button<ButtonProps>`
         }
     };
     
-    // (props.delOrReset || props.calculate ? "#ffffff" : "#000000")
     box-shadow: 0 5px 0 ${(props) => {
             if (props.delOrReset) {
                 return (props) => setThemeColor(props.themeColor, "#404e72", "#1b5f65", "#bc15f4");
@@ -220,4 +235,14 @@ export const Button = styled.button<ButtonProps>`
         }
         return null;
     }};
+
+    
+    &:hover {
+        filter: brightness(1.5);
+    }
+    @media screen and (min-width: 768px){
+        font-size: ${(props) => (props.delOrReset ? "1.75rem" : "2.5rem")};
+        border-radius: 10px;
+        padding: 1rem 0.85rem 0.5rem;
+    }
 `;
