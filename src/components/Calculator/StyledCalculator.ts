@@ -15,8 +15,17 @@ interface ThemeColor {
     themeColor: number
 }
 
+export const Wrapper = styled.div<ThemeColor>`
+    min-height: 100vh;
+    width: 100%;
+    background-color: ${(props) => setThemeColor(props.themeColor, "#3a4764", "#ededed", "#160628")};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 export const CalculatorWrapper = styled.main<ThemeColor>`
-    background-color: ${(props) => setThemeColor(props.themeColor, "transparent", "#ededed", "#160628")};
+    background-color: transparent;
     padding: 2.25rem 1.5rem;
     display: flex;
     flex-direction: column;
